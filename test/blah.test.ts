@@ -1,7 +1,8 @@
-import { sum } from '../src';
+import * as ReactDOM from 'react-dom';
 
 describe('blah', () => {
   it('works', () => {
-    expect(sum(1, 1)).toEqual(2);
+    const div = document.createElement('div');
+    ReactDOM.unmountComponentAtNode(div);
   });
 });
